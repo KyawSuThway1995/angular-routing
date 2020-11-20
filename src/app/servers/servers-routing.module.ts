@@ -9,7 +9,7 @@ import {EditServerComponent} from './edit-server/edit-server.component';
 import {DeactivateGuard} from '../shared/guard/deactivate-guard.service';
 
 const routes: Routes = [
-  {path: 'servers', component: ServersComponent, canActivateChild: [AuthGuard],
+  {path: '', component: ServersComponent, canActivateChild: [AuthGuard],
     children: [
       {path: ':id', component: ServerComponent, resolve: {server: ServerResolve}},
       {path: ':id/edit', component: EditServerComponent, canDeactivate: [DeactivateGuard]}

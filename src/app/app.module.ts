@@ -8,7 +8,6 @@ import { UserComponent } from './users/user/user.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {FormsModule} from '@angular/forms';
-import {ServersModule} from './servers/servers.module';
 
 @NgModule({
   declarations: [

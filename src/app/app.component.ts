@@ -7,6 +7,4 @@ import {ServerService} from './shared/services/server.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(serverSrv: ServerService) {
-  }
 }
