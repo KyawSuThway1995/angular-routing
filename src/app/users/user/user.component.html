@@ -1,2 +1,12 @@
-<p><strong>UserName : </strong> Kyaw Su Thway</p>
-<p><strong>ID : </strong> 1</p>
+<p><strong>ID : </strong> {{id}}</p>
+<p><strong>UserName : </strong> {{name}}</p>
+
+<a [routerLink]="['/users', 3, 'Tun Tun']"
+  [queryParams]="{age: 30, address: 'Yangon'}"
+  fragment="sec3">Load Tun Tun</a>
+<hr>
+<section id="sec1" class="vh-100 bg-danger">Section 01</section>
+<section id="sec2" class="vh-100 bg-success">Section 02</section>
+<section id="sec3" class="vh-100 bg-warning">Section 03</section>
+<section id="sec4" class="vh-100 bg-primary">Section 04</section>
+<section id="sec5" class="vh-100 bg-secondary">Section 05</section>

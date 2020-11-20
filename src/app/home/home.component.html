@@ -1,3 +1,4 @@
 <h3>Angular Routing</h3>
 <p>Manage your server and user</p>
-<a routerLink="../home">Reload Home</a>
+<a class="btn" routerLink="../home">Reload Home</a>
+<button class="btn btn-primary mx-3" (click)="authSrv.toggle()">{{authSrv.isLogin ? 'Logout' : 'Login'}}</button>

@@ -1,13 +1,15 @@
 <div class="row">
   <div class="col-4">
     <ul class="list-group">
-      <li class="list-group-item list-group-item-action">User 01</li>
-      <li class="list-group-item list-group-item-action">User 02</li>
-      <li class="list-group-item list-group-item-action">User 03</li>
+      <li class="list-group-item list-group-item-action"
+        *ngFor="let user of users"
+        [routerLink]="['/users', user.id, user.name]">
+        {{user.name}}
+      </li>
     </ul>
   </div>
-  <div class="col6">
-    <app-user></app-user>
+  <div class="col-6">
+    <router-outlet></router-outlet>
     <button class="btn btn-primary" (click)="backToHome()">Back To Home</button>
   </div>
 </div>

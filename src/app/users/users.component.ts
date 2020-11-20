@@ -8,6 +8,12 @@ import {Router} from '@angular/router';
 })
 export class UsersComponent implements OnInit {
 
+  users = [
+    {id: 1, name: 'Aung Aung'},
+    {id: 2, name: 'Ni Ni'},
+    {id: 3, name: 'Shein Min Thu'}
+  ]
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
